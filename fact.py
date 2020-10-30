@@ -1,7 +1,13 @@
-n=int(input("enter a number: "))
-fact=1
-x=n
-while x>0:
-    fact=x*fact
-    x=x-1
-print(n,'! = ',fact)
+
+def factorial(n):
+    fact=1
+    for i in range(2,n+1):
+        if i==1:
+           break
+        fact=fact*i
+        
+    print('the factorial of',n,'is',fact)
+
+
+x=int(input("enter a number: "))
+factorial(x)
